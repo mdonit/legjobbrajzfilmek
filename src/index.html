@@ -1,0 +1,134 @@
+<!--
+File: index.html
+Author: Maráki Donát
+Copyright: 2022, Maráki Donát
+Group: Szoft I E 1/3
+Date: 2022-03-30
+Github: https://github.com/mdonit
+Licenc: GNU GPL
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajzfilmek</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Rajzfilmek</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalNevjegy">
+                Készítő
+            </button>
+
+        </nav>
+        
+        <!--Cím-->
+        <h1 class="my-4">Legjobb Magyar Rajzfilmek</h1>
+
+        <!--Rajzfilmek Lista-->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Cím</th>
+                    <th scope="col">Dátum</th>
+                    <th scope="col">Rendező</th>
+                    <th scope="col" style="text-align: center;">Részletek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vuk</td>
+                    <td>1981</td>
+                    <td>Dargay Attila</td>
+                    <td style="text-align:center;">
+                        1981-ben bemutatott egész estés magyar rajzfilm, <br>
+                        amely Fekete István azonos című regénye alapján készült, <br>
+                        Dargay Attila rendezte, és Wolf Péter írta a zenéjét.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Macskafogó</td>
+                    <td>1986</td>
+                    <td>Ternovszky Béla</td>
+                    <td style="text-align:center;">
+                        Grabovszky, a macskák ellen dolgozó egérügynök történetét, <br>
+                        amelyet Ternovszky Béla rendezett, 1986-ban láthattuk először. <br>
+                        A forgatókönyvet Nepp József írta, a zenéjét Deák Tamás szerezte.
+                    </td>
+                </tr>
+                <tr>
+                    <td>János vitéz</td>
+                    <td>1973</td>
+                    <td>Jankovics Marcell</td>
+                    <td style="text-align:center;">
+                        A Jankovics Marcell által rendezett egész estés filmet 1973-ban mutatták be, <br>
+                        Petőfi Sándor születésének 150. évfordulója alkalmából. <br>
+                        Zenéjét Gyulai Gaál János írta.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pom Pom</td>
+                    <td>1979</td>
+                    <td>Dargay Attila</td>
+                    <td style="text-align:center;">
+                        A szőrös kis lény szellemi atyja Csukás István volt. <br>
+                        A Pom Pom meséi című magyar televíziós rajzfilmsorozatot <br>
+                        Dargay Attila rendezte és Sajdik Ferenc rajzolta. Két évadból állt: <br>
+                        az első 1979-ben, a második 1980-ban készült el.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lúdas Matyi</td>
+                    <td>1976</td>
+                    <td>Dargay Attila</td>
+                    <td style="text-align:center;">
+                        Szintén Dargay Attila rendezte az 1976-ban bemutatott egész estés rajzfilmet, <br>
+                        amelynek egyik főhőse Matyi, a másik a lúdja. <br>
+                        A forgatókönyvírásban részt vett Romhányi József is.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Névjegy-->
+        <div class="modal fade" tabindex="-1" id="modalNevjegy">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Oldal Készítője</h5>
+                </div>
+                <div class="modal-body">
+                  <p class="mt-3" style="text-align:center">Maráki Donát, 2022-03-30, Szoft I E 1/3</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
